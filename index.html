@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cotizador de Impresión 3D</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora de costos de impresión 3D</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 
   <div class="card">
-    <h1>Cotizador de Impresión 3D - Cali3DPrint</h1>
+    <h1>Cali3DPrint</h1>
+    <h1>¿SABES CUANTO VAS A COBRAR POR TUS IMPRESIONES 3D?</h1>
+    <p>Utiliza esta calculadora para obtener rapidamente un precio estimado de tus impresiones.</p>
+
+    <h1>Calculadora de costos de impresión 3D</h1>
+   
     <div class="grid">
       <div class="form">
         <div class="row">
@@ -61,7 +66,7 @@
             <input id="printHours" type="number" min="0" step="0.1" placeholder="Horas de máquina" />
           </div>
           <div>
-            <label>Costo máquina por hora</label>
+            <label>Costo electricidad máquina por hora</label>
             <input id="machineCost" type="number" min="0" step="0.1" value="3000" />
           </div>
         </div>
@@ -120,14 +125,23 @@
         <div class="line"><div>Margen (%)</div><div id="res-margin-val">-</div></div>
         <div class="total"><div>Precio unitario</div><div id="res-unit">-</div></div>
         <div class="total" style="font-size:16px"><div>Precio total (x cantidad)</div><div id="res-total">-</div></div>
+      
       </div>
+
+   
     </div>
-    <a href="formula.html">Formula que se utilizo para calcular el valor</a> 
+    <a href="formula.html">Formula que se utilizo para calcular el valor</a>  |
+  <a href="https://sites.google.com/view/cali3dprint/filamentos">Comprar Filamento</a>  |
+  <a href="https://sites.google.com/view/cali3dprint">Comprar una impresora 3D</a> 
+   <p>Creado por Samir Vivas | 2025</p>
   </div>
 
 
 
   <script src="script.js"></script>
+
+ 
 </body>
+
 </html>
 
