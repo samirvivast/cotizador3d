@@ -9,6 +9,15 @@ const fmt = (n, cur='COP') => {
   }
 }
 
+function validarInput(input) {
+  let valor = parseFloat(input.value);
+  if (valor < 0) {
+    input.value = 0; // Reemplaza el valor negativo con 0
+  }
+  // Alternativamente, puede usar Math.max para asegurarse de que el valor no sea menor que 0
+  // input.value = Math.max(0, valor);
+}
+
 function syncMaterialPrice(){
   const mat = document.querySelector('#material').selectedOptions[0];
   const price = mat.dataset.pricekg;
@@ -113,4 +122,5 @@ $('export').addEventListener('click', ()=>{
   a.click();
   a.remove();
   URL.revokeObjectURL(url);
+
 });
